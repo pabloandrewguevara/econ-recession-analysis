@@ -1,1 +1,1 @@
-# economic-regime-portfolio-tool
+# Economic Regime Classification and Asset Allocation

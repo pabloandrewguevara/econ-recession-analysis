@@ -1,1 +1,1 @@
-# Economic Regime Classification and Asset Allocation
+# Economic Recession Analysis Tool

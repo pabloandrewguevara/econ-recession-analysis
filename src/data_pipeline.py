@@ -7,7 +7,7 @@ import pandas as pd
 from extract_raw_data_fred import extract_fred_data
 from transform_raw_data_fred import transform_fred_data
 
-def run_fred_pipeline(lookback_months=288, 
+def run_fred_pipeline(lookback_months=12, 
                      config_path='../config.json',
                      raw_data_path='../data/raw/raw_fred.db',
                      processed_data_path='../data/processed/processed_fred.db',
@@ -76,8 +76,8 @@ def main():
     import argparse
     
     parser = argparse.ArgumentParser(description='FRED Data Pipeline')
-    parser.add_argument('--lookback', type=int, default=288,
-                       help='Number of months to look back (default: 288)')
+    parser.add_argument('--lookback', type=int, default=12,
+                       help='Number of months to look back (default: 12)')
     parser.add_argument('--config', type=str, default='../config.json',
                        help='Path to config.json file (default: ../config.json)')
     parser.add_argument('--raw-path', type=str, default='../data/raw/raw_fred.db',

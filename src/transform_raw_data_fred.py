@@ -40,13 +40,12 @@ def transform_fred_data(lookback_months=12, input_path='../data/raw/raw_fred.db'
         yoy = ts.pct_change(periods=12) * 100
         series_dict[sid] = yoy.dropna()
 
-    # Compute quarterly GDP growth rate (annualized)
+    # Compute quarterly GDP growth rate (quarter-over-quarter)
     if 'GDPC1' in series_dict:
         gdp_ts = series_dict['GDPC1']
-        # Calculate quarter-over-quarter percentage change, then annualize
+        # Calculate quarter-over-quarter percentage change
         qoq_growth = gdp_ts.pct_change(periods=1) * 100
-        annualized_growth = qoq_growth * 4  # Annualize quarterly growth
-        series_dict['GDPC1_GROWTH'] = annualized_growth.dropna()
+        series_dict['GDPC1_GROWTH'] = qoq_growth.dropna()
 
     # Slice all series to lookback window
     processed_records = []

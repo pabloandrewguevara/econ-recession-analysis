@@ -33,7 +33,8 @@ def extract_fred_data(lookback_months=12, config_path='../config.json', output_p
         'UMCSENT','RSAFS',                   # Sentiment & Spending
         'VIXCLS',                            # Market Stress
         'DCOILWTICO',                        # Commodities
-        'SP500'                              # Equity Market
+        'SP500',                             # Equity Market
+        'USRECQ'                             # NBER Recession Indicator
     ]
 
     # Fetch each series into a single DataFrame

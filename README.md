@@ -2,7 +2,7 @@
 
 This ongoing project uses macroeconomic time series data to identify, analyze, predict, and visualize historical patterns around U.S. recessions. The goal is to explore key indicators that precede or coincide with recessionary periods and to provide a foundation for building predictive or diagnostic models.
 
-## TODO
+## To Do
 
 - [ ] Data Pipeline & Processing
 - [ ] Analysis & Modeling
@@ -78,4 +78,5 @@ recession-indicator/
 ## References
 
 - [FRED - Federal Reserve Economic Data](https://fred.stlouisfed.org/)
+- [Yahoo Finance - S&P 500 Index (GSPC)](https://finance.yahoo.com/quote/%5EGSPC)
 

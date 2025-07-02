@@ -42,3 +42,8 @@
 
 #### Equity Market
 - S&P 500: Benchmark equity index reflecting market performance and investor sentiment.
+
+## References
+
+- [FRED - Federal Reserve Economic Data](https://fred.stlouisfed.org/)
+

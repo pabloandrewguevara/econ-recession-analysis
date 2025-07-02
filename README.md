@@ -3,22 +3,22 @@
 ## Architecture
 
 ```
-RECESSION-INDICATOR/
-├── data/                       # All dataset files
-│   ├── raw/                    # Unprocessed source data
-│   │   ├── raw_fred.db         # FRED data
-│   │   └── raw_yahoo.db        # Yahoo Finance data
-│   └── processed/              # Transformed/cleaned data
+recession-indicator/
+├── data/          	        	
+│   ├── raw/                    	
+│   │   ├── raw_fred.db         	# FRED data
+│   │   └── raw_yahoo.db        	# yahoo finance data
+│   └── processed/              	
 │       └── processed_fred.db
 ├── notebooks/
-│   └── eda/                    # Exploratory data analysis notebooks
+│   └── eda/                    	# exploratory data analysis notebooks
 │       └── fred.ipynb
-├── src/                        # Source scripts for ETL pipeline
-│   ├── data_pipeline.py        # Orchestration script
+├── src/                        	
+│   ├── data_pipeline.py        	# ETL pipeline orchestration script
 │   ├── extract_raw_data_fred.py
 │   ├── extract_raw_data_yahoo.py
 │   └── transform_raw_data_fred.py
-├── config.json                 # API keys or configuration settings
+├── config.json                 	
 ├── .gitignore
 └── README.md
 ```

@@ -2,24 +2,26 @@
 
 ## Architecture
 
+```
 RECESSION-INDICATOR/
-├── data/ 				# All dataset files
-│ ├── raw/ 				# Unprocessed source data
-│ │ ├── raw_fred.db			# FRED data
-│ │ └── raw_yahoo.db			# Yahoo Finance data
-│ └── processed/ 			# Transformed/cleaned data
-│   └── processed_fred.db
+├── data/                       # All dataset files
+│   ├── raw/                    # Unprocessed source data
+│   │   ├── raw_fred.db         # FRED data
+│   │   └── raw_yahoo.db        # Yahoo Finance data
+│   └── processed/              # Transformed/cleaned data
+│       └── processed_fred.db
 ├── notebooks/
-│ └── eda/ 				# Exploratory data analysis notebooks
-│   └── fred.ipynb
-├── src/ 				# Source scripts for ETL pipeline
-│ ├── data_pipeline.py 			# Orchestration script
-│ ├── extract_raw_data_fred.py
-│ ├── extract_raw_data_yahoo.py
-│ └── transform_raw_data_fred.py
-├── config.json 			# API keys or configuration settings
+│   └── eda/                    # Exploratory data analysis notebooks
+│       └── fred.ipynb
+├── src/                        # Source scripts for ETL pipeline
+│   ├── data_pipeline.py        # Orchestration script
+│   ├── extract_raw_data_fred.py
+│   ├── extract_raw_data_yahoo.py
+│   └── transform_raw_data_fred.py
+├── config.json                 # API keys or configuration settings
 ├── .gitignore
 └── README.md
+```
 
 ## Data
 

@@ -47,6 +47,9 @@ def extract_fred_data(lookback_months=12, config_path='../config.json', output_p
         frames.append(df.reset_index())
 
     raw_df = pd.concat(frames, ignore_index=True)
+    
+    # Convert date column to datetime, then to string format for SQLite compatibility
+    raw_df['date'] = pd.to_datetime(raw_df['date']).dt.strftime('%Y-%m-%d')
 
     # Write to SQLite
     conn = sqlite3.connect(output_path)

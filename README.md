@@ -4,7 +4,7 @@ This ongoing project uses macroeconomic time series data to identify, analyze, p
 
 ## To Do
 
-- [ ] Data Pipeline & Processing
+- [ ] Data Collection & Processing
 - [ ] Analysis & Modeling
 - [ ] Visualization & Reporting
 - [ ] Documentation & Infrastructure

@@ -13,7 +13,7 @@ This ongoing project uses macroeconomic time series data to identify, analyze, p
 
 ```
 recession-indicator/
-├── data/          	        	
+├── data/          	        	# gitignored
 │   ├── raw/                    	
 │   │   ├── raw_fred.db         	# FRED data
 │   │   └── raw_yahoo.db        	# yahoo finance data
@@ -27,7 +27,7 @@ recession-indicator/
 │   ├── extract_raw_data_fred.py
 │   ├── extract_raw_data_yahoo.py
 │   └── transform_raw_data_fred.py
-├── config.json                 	
+├── config.json           		# gitignored      	
 ├── .gitignore
 └── README.md
 ```
